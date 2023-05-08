@@ -1,11 +1,17 @@
 const bar = document.getElementById('bar');
+const close = document.getElementById('close');
 const nav = document.querySelector('#navbar');
 const active = document.getElementsByClassName('active');
 
 
 if(bar){
     bar.addEventListener('click', () => {
-        console.log(active);
         nav.classList.add('active');
+    })
+}
+
+if(close){
+    close.addEventListener('click', () =>{
+        nav.classList.remove('active')
     })
 }
